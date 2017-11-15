@@ -1,0 +1,65 @@
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\bin\Debug\KEMPING.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\bin\Debug\KEMPING.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\bin\Debug\KEMPING.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\UserControl1.baml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\MainWindow.g.cs
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\UserControl1.g.cs
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\App.g.cs
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING_MarkupCompile.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING_MarkupCompile.lref
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\App.baml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\MainWindow.baml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\Zasoby.baml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING.g.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING.Properties.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\OknoSegment.g.cs
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\OknoSegment.baml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING.csprojResolveAssemblyReference.cache
+H:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\bin\Debug\KEMPING.exe.config
+H:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\bin\Debug\KEMPING.exe
+H:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\bin\Debug\KEMPING.pdb
+H:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING.csprojResolveAssemblyReference.cache
+H:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\UserControl1.baml
+H:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\MainWindow.g.cs
+H:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\UserControl1.g.cs
+H:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\OknoSegment.g.cs
+H:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\App.g.cs
+H:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\GeneratedInternalTypeHelper.g.cs
+H:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING_MarkupCompile.cache
+H:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING_MarkupCompile.lref
+H:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\App.baml
+H:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\MainWindow.baml
+H:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\OknoSegment.baml
+H:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\Zasoby.baml
+H:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING.g.resources
+H:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING.Properties.Resources.resources
+H:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING.csproj.GenerateResource.Cache
+H:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING.csproj.CoreCompileInputs.cache
+H:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING.exe
+H:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING.pdb
+F:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\bin\Debug\KEMPING.exe.config
+F:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\bin\Debug\KEMPING.exe
+F:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\bin\Debug\KEMPING.pdb
+F:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING.csprojResolveAssemblyReference.cache
+F:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\UserControl1.baml
+F:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\MainWindow.g.cs
+F:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\UserControl1.g.cs
+F:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\OknoSegment.g.cs
+F:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\App.g.cs
+F:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING_MarkupCompile.cache
+F:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING_MarkupCompile.lref
+F:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\App.baml
+F:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\MainWindow.baml
+F:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\OknoSegment.baml
+F:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\Zasoby.baml
+F:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING.g.resources
+F:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING.Properties.Resources.resources
+F:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING.csproj.GenerateResource.Cache
+F:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING.csproj.CoreCompileInputs.cache
+F:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING.exe
+F:\z laptopa\Documents\Visual Studio 2015\Projects\KEMPING\KEMPING\obj\Debug\KEMPING.pdb

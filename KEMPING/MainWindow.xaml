@@ -1,0 +1,246 @@
+﻿<Window x:Class="KEMPING.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:util="clr-namespace:KEMPING;assembly="
+        xmlns:l="clr-namespace:KEMPING"
+        Title="KEMPING MANAGER 3000" MinHeight="700" MinWidth="1024"
+        Background ="{DynamicResource wybranyKolorTla}"
+        Foreground = "{DynamicResource wybranyKolorCzcionki}" KeyDown="Window_KeyDown"
+        
+    >
+
+    <Window.Resources>
+        <sys:Double x:Key="rozmiarCzcionki">25</sys:Double>
+        <sys:String x:Key="tytulComboboxa">Wybierz motyw:</sys:String>
+        <x:Array x:Key="ComboboxItems" Type="sys:String">
+            <sys:String>Jasny</sys:String>
+            <sys:String>Ciemny</sys:String>
+            <sys:String>Nie wiem</sys:String>
+        </x:Array>
+
+        <SolidColorBrush x:Key="wybranyKolorTla" Color="Gainsboro" />
+        <SolidColorBrush x:Key="wybranyKolorCzcionki" Color="Black" />
+        <l:BoolToVisibilityConverter x:Key="converter" />
+
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="187*"/>
+            <ColumnDefinition Width="116*"/>
+        </Grid.ColumnDefinitions>
+
+        <TabControl Grid.ColumnSpan="2" Name="Zakladki">
+            <TabItem Name="ZakladkaPobyty" Header="Obecni klienci" Background="{DynamicResource wybranyKolorTla}" 
+                     Foreground="{DynamicResource wybranyKolorCzcionki}">
+                <Grid Background="{DynamicResource wybranyKolorTla}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25" />
+                            <RowDefinition Height="25" />
+                            <RowDefinition Height="25" />
+                        </Grid.RowDefinitions>
+                        <!--<StackPanel Orientation="Horizontal">-->
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0">Szukaj:</Label>
+                            <TextBox Grid.Column="1" MinWidth="200" ></TextBox>
+                            <Button Grid.Column="2" MinWidth="50" HorizontalAlignment="Right"></Button>
+                        </Grid>
+                        <!--</StackPanel>-->
+
+                        <Label Grid.Row="1">Sortuj wg:</Label>
+                        <DockPanel Grid.Row="2">
+                            <RadioButton x:Name="radioNazwisko">Nazwisk</RadioButton>
+                            <RadioButton x:Name="radioData">Dat</RadioButton>
+                            <RadioButton x:Name="radioId" >Identyfikatora</RadioButton>
+                            <Button Width="76" Click="Odswiez_Obecnych" HorizontalAlignment="Right">Odśwież</Button>
+                        </DockPanel>
+
+                    </Grid>
+
+
+                    <ListView Name="lstPersons" Margin="0,82,0,40" Background="{DynamicResource wybranyKolorTla}"
+                              ItemsSource="{Binding Pobyt}" IsSynchronizedWithCurrentItem="True" 
+                              Foreground="{DynamicResource wybranyKolorCzcionki}" >
+                        <ListView.View>
+                            <GridView AllowsColumnReorder="True" >
+                                <GridView.Columns>
+                                    <GridViewColumn Header="Id" Width="30"
+                            DisplayMemberBinding="{Binding IdOsoby}" />
+                                    <GridViewColumn Header="Imię"
+                            DisplayMemberBinding="{Binding Imie}"  />
+                                    <GridViewColumn Header="Nazwisko"  x:Name="kolumnaNazw"  
+                            DisplayMemberBinding="{Binding Nazwisko}" />
+                                    <GridViewColumn Header="Data przyjazdu"
+                            DisplayMemberBinding="{Binding DataPrzyjazdu}" />
+                                </GridView.Columns>
+                            </GridView>
+                        </ListView.View>
+
+
+
+                    </ListView>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBox x:Name="PoleImie" Height="23" VerticalAlignment="Bottom" Width="100"
+                                 IsMouseCapturedChanged="zaznaczenie_1" GotFocus="zaznaczenie_2" Grid.Column="0">Imię</TextBox>
+                        <TextBox x:Name="PoleNazwisko" Height="23" VerticalAlignment="Bottom" Width="150"
+                                 IsMouseCapturedChanged="zaznaczenie_1" GotFocus="zaznaczenie_2" Grid.Column="1">Nazwisko</TextBox>
+                        <DatePicker Name="PoleDataP" HorizontalAlignment="Left" VerticalAlignment="Bottom" MinWidth="717"
+                                    Grid.Column="2"/>
+                        <Button Name="btnDodajPobyt" Click="Dodaj_Pobyt" HorizontalAlignment="Left" Width="36" Height="23" 
+                            VerticalAlignment="Bottom"  Grid.Column="3" IsDefault="True" >
+                            <Image Source="/PLUS.png" />
+                        </Button>
+                        <Button  Name="btnUsun" VerticalAlignment="Bottom" Content="Usuń" Grid.Column="4" Height="23" Margin="0,453,0,0" Click="btnUsun_Click"></Button>
+                    </Grid>
+                    <DockPanel Margin="0,111,0,0">
+
+
+                    </DockPanel>
+                    <!--<Button Visibility="Hidden" Margin="0,0,78,0" Click="Button_Click2" Height="32" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="56">Nic</Button>-->
+
+                </Grid>
+
+
+            </TabItem>
+
+            <TabItem Name="ZakladkaStali" Header="Stali klienci" Background="{DynamicResource wybranyKolorTla}"
+                     Foreground="{DynamicResource wybranyKolorCzcionki}" GotFocus="TabItem_GotFocus">
+                <Grid>
+                    <Grid Background="{DynamicResource wybranyKolorTla}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25"></RowDefinition>
+                            <!--<RowDefinition Height="5"></RowDefinition>-->
+                            <RowDefinition Height="25"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Label Grid.Row="0"  Foreground="{DynamicResource wybranyKolorCzcionki}">Sortuj wg:</Label>
+                        <DockPanel Grid.Row="1" >
+                            <RadioButton x:Name="radioNazwiskoStalych">Nazwisk</RadioButton>
+                            <RadioButton x:Name="radioDataStalych">Dat</RadioButton>
+                            <RadioButton x:Name="radioIdStalych">Identyfikatora</RadioButton>
+                            <Button Width="76" Click="Odswiez_Stalych" HorizontalAlignment="Right">Odśwież</Button>
+                        </DockPanel>
+
+                    </Grid>
+
+
+                    <ListView Name="lstPersonsReg" Margin="0,50,0,40" Background="{DynamicResource wybranyKolorTla}" 
+                              ItemsSource="{Binding StalyKlient}">
+                        <ListView.View>
+                            <GridView AllowsColumnReorder="True">
+                                <GridView.Columns>
+                                    <GridViewColumn Header="Id" 
+                            DisplayMemberBinding="{Binding IdOsoby}" />
+                                    <GridViewColumn Header="Imię"
+                            DisplayMemberBinding="{Binding Imie}"  />
+                                    <GridViewColumn Header="Nazwisko"  x:Name="kolumnaNazwStalych"  
+                            DisplayMemberBinding="{Binding Nazwisko}" />
+                                    <GridViewColumn Header="Ilość przyjazdów"
+                            DisplayMemberBinding="{Binding iloscPrzyjazdow}" />
+                                </GridView.Columns>
+                            </GridView>
+                        </ListView.View>
+
+                    </ListView>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBox x:Name="PoleImieStalych" Height="23" VerticalAlignment="Bottom" Width="100"
+                                 IsMouseCapturedChanged="zaznaczenie_1" GotFocus="zaznaczenie_2" Grid.Column="0">Imię</TextBox>
+                        <TextBox x:Name="PoleNazwiskoStalych" Height="23" VerticalAlignment="Bottom" Width="150"
+                                 IsMouseCapturedChanged="zaznaczenie_1" GotFocus="zaznaczenie_2" Grid.Column="1">Nazwisko</TextBox>
+                        <TextBox x:Name="PoleIloscPrzyjazdow" Height="23" VerticalAlignment="Bottom" Grid.Column="2"  
+                                 IsMouseCapturedChanged="zaznaczenie_1" GotFocus="zaznaczenie_2">Ilosć przyjazdów</TextBox>
+                        <Button Name="btnDodajStalego" Click="Dodaj_Stalego" HorizontalAlignment="Left" Width="36" Height="39" 
+                            VerticalAlignment="Bottom"  Grid.Column="3" IsDefault="True" >
+                            <Image Source="/PLUS.png" />
+                        </Button>
+                    </Grid>
+
+
+                </Grid>
+
+            </TabItem>
+
+            <TabItem Header="Siatka" Background="{DynamicResource wybranyKolorTla}" 
+                     Foreground="{DynamicResource wybranyKolorCzcionki}">
+                <Grid Background="{DynamicResource wybranyKolorTla}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="25" />
+                    </Grid.RowDefinitions>
+
+
+                    <ScrollViewer HorizontalScrollBarVisibility="Auto">
+                        <UniformGrid Name="Siatka">
+                            <UniformGrid.Resources>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Background" Value="LightGreen"/>
+                                    <Setter Property="Margin" Value="1,1,1,1"/>
+                                    <Setter Property="Content" Value="WOLNE"/>
+                                    <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                    <Setter Property="Grid.Column" Value="{DynamicResource kolumnaPrzycisku}"/>
+                                    <Setter Property="Width" Value="50" />
+                                    <Setter Property="Height" Value="50" />
+
+
+                                    <EventSetter Event="Click" Handler="Button_Click2" />
+
+                                </Style>
+                            </UniformGrid.Resources>
+                            <!--<Grid Name="cos"></Grid>-->
+                        </UniformGrid>
+                    </ScrollViewer>
+
+
+
+                    <DockPanel Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+                        <DockPanel.Resources>
+                            <Style TargetType="{x:Type TextBox}">
+                                <Setter Property="VerticalContentAlignment" Value="Bottom" />
+                            </Style>
+                        </DockPanel.Resources>
+                        <TextBox Name="txtWPionie" Text="w poziomie" Width="75" Height="20"
+                                 IsMouseCapturedChanged="zaznaczenie_1" GotFocus="zaznaczenie_2"></TextBox>
+                        <Label>x</Label>
+                        <TextBox Name="txtWPoziomie" Text="w pionie" Width="75" Height="20"
+                                 IsMouseCapturedChanged="zaznaczenie_1" GotFocus="zaznaczenie_2"></TextBox>
+                        <Button Margin="10,0,0,0" Click="Zastosuj" IsDefault="True">Zastosuj</Button>
+                    </DockPanel>
+
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Opcje" Background="{DynamicResource wybranyKolorTla}" 
+                     Foreground="{DynamicResource wybranyKolorCzcionki}">
+                <StackPanel x:Name="tloTestu" Background="{DynamicResource wybranyKolorTla}">
+                    <Label FontSize="{StaticResource rozmiarCzcionki}" Content="{StaticResource tytulComboboxa}" 
+                     Foreground="{DynamicResource wybranyKolorCzcionki}"/>
+                    <ComboBox ItemsSource="{StaticResource ComboboxItems}"  />
+                    <WrapPanel HorizontalAlignment="Center">
+                        <Button Width="60" Click="Wlacz_Tryb_Jasny">Dzienny</Button>
+                        <Button Width="60" Click="Wlacz_Tryb_Ciemny">Nocny</Button>
+                        <Button Width="60">Nie wiem</Button>
+                    </WrapPanel>
+                    <Button Visibility="{Binding HasFunction {StaticResource converter}}" />
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

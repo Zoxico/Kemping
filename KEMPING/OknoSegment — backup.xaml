@@ -1,0 +1,20 @@
+﻿<Window x:Class="KEMPING.OknoSegment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KEMPING"
+        mc:Ignorable="d"
+        Title="Window2" Height="200" Width="200" KeyDown="Window_KeyDown">
+    <Grid>
+        <StackPanel>
+            <Label>Dane klienta:</Label>
+            <TextBox Name="txtImie" Text="Imię" GotFocus="zaznaczenie_1" IsMouseCapturedChanged="zaznaczenie_2"/>
+            <TextBox Name="txtNazw" Text="Nazwisko" GotFocus="zaznaczenie_1" IsMouseCapturedChanged="zaznaczenie_2"></TextBox>
+            <TextBox Name="txtDat1" Text="Data przyjazdu" GotFocus="zaznaczenie_1" IsMouseCapturedChanged="zaznaczenie_2"></TextBox>
+            <Button  Name="btnDodajKlienta" Content="Dodaj" Height="50" Click="btnDodajKlienta_Click" IsDefault="True"/>
+            <Label   Name="labelDodano" Content=" " HorizontalContentAlignment="Center"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
